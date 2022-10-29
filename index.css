@@ -1,0 +1,274 @@
+/* :root {
+  --title-size: 2em;
+  --p-size: 1.5em;
+  --hover-color: grey;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 11px;
+  list-style: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  border: solid 5px red;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+  width: 100%;
+  height: 10vh;
+
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+  transition: 0.5s;
+}
+
+.nav_logo {
+  margin: 1em 2em;
+  padding: 1em 2em;
+}
+
+.nav_logo:hover>.logoIcon {
+  cursor: pointer;
+  color: grey;
+}
+
+.logo {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: gold;
+    margin-left: 0.3em;
+  }
+
+.nav_logo:hover > a > .logo {
+  /* color: rgb(24, 85, 23); */
+  color: aliceblue;
+}
+
+.nav_menu {
+  margin: 2em 4em;
+  right: 0;
+}
+
+.menuList {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gold;
+
+  padding: 1em;
+}
+
+.menuList:hover {
+  color:aliceblue;
+  cursor: pointer;
+}
+
+/*  */
+
+#main {
+  max-width: 100%;
+  height: 80vh;
+  background-image: url(./img/main/main_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin: auto;
+}
+
+.main_box {
+  width: 30em;
+  height: 20em;
+
+  position: relative;
+}
+
+.main_logo {
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25em;
+  display: block;
+}
+
+.main_nextBtn {
+  width: 60%;
+  height: 40%;
+  margin: auto;
+
+  flex-direction: column;
+}
+
+.nextBtnText {
+  color: rgb(46, 46, 46);
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.nextBtnUnderLine {
+  width: 16em;
+  height: 2px;
+  background-color: rgb(46, 46, 46);
+}
+
+.main_nextBtn:hover>.nextBtnText {
+  cursor: pointer;
+  color: lightgray;
+}
+
+.main_nextBtn:hover>.nextBtnUnderLine {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+/*  */
+
+#introduce {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+.introduce_slideBox {
+  max-width: 100%;
+  height: 60%;
+  margin: 0 30vh;
+  position: relative;
+}
+
+.slideList {
+  width: 100%;
+  height: 80%;
+  display: block;
+  visibility: hidden;
+  object-fit: cover;
+  position: absolute;
+}
+
+.active {
+  visibility: visible;
+}
+
+.introduce_work {
+  width: 100%;
+  height: 40%;
+}
+
+.workBox {
+  width: 100%;
+  height: 100%;
+  padding: 5em 30vh;
+}
+
+.workTitle {
+  font-size: 2em;
+}
+
+.workText {
+  font-size: 1.5em;
+
+  padding-top: 3em;
+}
+
+/*  */
+
+#gallery {
+  width: 100%;
+  height: 100vh;
+  background-color:aliceblue;
+}
+
+.gallery_titleBox {
+  width: 100%;
+  height: 30vh;
+
+  padding-top: 10vh;
+  flex-direction: column;
+}
+
+.galleryTitle {
+  font-size: 2em;
+}
+
+.galleryText {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.gallery_contents {
+  width: 100%;
+}
+
+/*  */
+
+#contact {
+  width: 100%;
+  height: 100vh;
+
+  flex-direction: column;
+}
+
+.contactImg {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.contactBox {
+  width: 100%;
+  height: 20%;
+  display: block;
+}
+
+.contactSns {
+  width: 100%;
+  height: 50%;
+}
+
+.contactList {
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+.contactCopyright {
+  width: 100%;
+  height: 50%;
+  background-color: darkslategray;
+  color: aliceblue;
+}
+
+.copyrightText {
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+/*  */
+
+.line01 {
+  width: 80%;
+  height: 0.1em;
+  background-color: gray;
+  margin: auto;
+}

@@ -6,79 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="글라스 길딩">
-    <title>hompage Title</title>
-    <link rel="stylesheet" href="main.css">
-    <script defer src="main.js"></script>
+    <title> main page </title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" defer src="index.js"></script>
     <script src="https://kit.fontawesome.com/30cb991463.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="observBox1"></div>
     <nav id="nav">
-        <div class="nav_logo">
-            <i class="logoIcon fa-solid fa-pen-nib"></i>
-            <span class="logoName">golen quills glass art</span>
+        <div class="nav_logo red">
+            <a href="./index.html"><i class="logoIcon logo fa-solid fa-pen-nib"></i></a>
+            <a href="./index.html"><span class="logoName logo">golen quills glass art</span></a>
         </div>
         <ul class="nav_menu center">
-            <li class="menu_work menuList">work</li>
-            <li class="menu_profile menuList">profile</li>
-            <li class="menu_ornamentIsCrime menuList">ornamet is crime</li>
-            <li class="menu_otherWorks menuList">other works</li>
-            <li class="menu_hireMe menuList">hire me</li>
+            <a href="./02glassgilding.html" class="menuList red"> glassgilding </a>
+            <a href="./03goods.html" class="menuList red"> goods </a>
+            <a href="./04contact.html" class="menuList red"> contact </a>
         </ul>
     </nav>
-    <section id="main" class="center">
+
+    <section id="main" class="center red">
         <div class="main_box">
-            <img
-             class="main_logo"
-             src="./img/main/main_logo.png"
-             alt="main_logo"></img>
+            <img class="main_logo red" src="./img/main/main_logo.png" alt="main_logo"></img>
             <div class="main_nextBtn center">
                 <span class="nextBtnText">view my work</span>
                 <span class="nextBtnUnderLine"></span>
             </div>
     </section>
+
     <section id="introduce">
-        <div class="introduce_slideBox">
-            <img class="slideList slide01 active" src="./img/introduce/introduce_01.jpg" alt="">
-            <img class="slideList slide02" src="./img/introduce/introduce_02.jpg" alt="">
-            <img class="slideList slide03" src="./img/introduce/introduce_03.jpg" alt="">
-            <img class="slideList slide04" src="./img/introduce/introduce_04.jpg" alt="">
-            <img class="slideList slide05" src="./img/introduce/introduce_05.jpg" alt="">
-            <img class="slideList slide06" src="./img/introduce/introduce_06.jpg" alt="">
-            <img class="slideList slide07" src="./img/introduce/introduce_07.jpg" alt="">
+        <div class="introduce_slideBox center red">
+            <img class="slideList slide01 active" src="./img/main_slide/introduce_01.jpg" alt="Gold leaf">
+            <img class="slideList slide02" src="./img/main_slide/introduce_02.jpg" alt="Glass processing">
+            <img class="slideList slide03" src="./img/main_slide/introduce_03.jpg" alt="mosaic">
+            <img class="slideList slide04" src="./img/main_slide/introduce_04.jpg" alt="Coca cola">
+            <img class="slideList slide05" src="./img/main_slide/introduce_05.jpg" alt="Catholic church">
+            <img class="slideList slide06" src="./img/main_slide/introduce_06.jpg" alt="temple">
+            <img class="slideList slide07" src="./img/main_slide/introduce_07.jpg" alt="church">
         </div>
         <div class="introduce_work center">
             <div class="workBox">
-                <h3 class="workTitle center">work title</h4>
-                    <p class="workText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nulla aliquam
-                        voluptatum. Adipisci harum optio natus provident corrupti maxime eos unde nihil ea, perferendis
-                        molestiae tempora maiores sint laboriosam. Tenetur.</p>
+                <h3 class="workTitle center red">훅 타이틀 : 고객을 사로잡을 타이틀</h4>
+                    <p class="workText red"> 훅 텍스트 : 글라스 길딩 또는 전자까가 팔고자 하는 상품이나 서비스를 소개해서 고객을 사로잡을 매력적인 문구. 본인 사업의 매력을 축약해서 혹은 의문을 불러 일으키거나 해서 고객이 더 알고싶게 만드는 문장. 전체 내용의 축약.</p>
             </div>
         </div>
     </section>
+
+    <div class="line01"></div>
+
     <section id="gallery">
         <header class="gallery_titleBox center">
-            <h3 class="galleryTitle">gallery title</h3>
-            <p class="galleryText">gallery text gallery text</p>
+            <h3 class="galleryTitle red">갤러리 (매력적인 다른 타이틀 있으면 더 좋음)</h3>
+            <p class="galleryText red">인스타그램에서 전자까를 찾기 위한 해시태그</p>
         </header>
         <div class="gallery_contents"></div>
     </section>
+
     <section id="contact" class="center">
-        <img
-         class="contactImg"
-         src="./img/contact/contact_main.jpg">
+        <img class="contactImg red" src="./img/contact/contact_main.jpg">
         <address class="contactBox">
             <div class="contactSns center">
-                <i class="contactList fa-solid fa-envelope"></i>
-                <i class="contactList fa-brands fa-square-facebook"></i>
-                <i class="contactList fa-brands fa-square-instagram"></i>
+                <i class="contactList fa-solid fa-envelope red"></i>
+                <i class="contactList fa-brands fa-square-facebook red"></i>
+                <i class="contactList fa-brands fa-square-instagram red"></i>
             </div>
             <div class="contactCopyright center">
-                <span class="copyrightText">copyright by jeon</span>
+                <span class="copyrightText">copyright by seol</span>
             </div>
         </address>
     </section>
+
 </body>
 
 </html>
