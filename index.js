@@ -35,7 +35,6 @@ navColorObserver(contact)
 
 const slideList = [...document.querySelectorAll(".slideList")];
 const slideArr = slideList.map((v) => v.classList[1]);
-console.log(slideList);
 
 function slideTimer() {
   let count = 0;
@@ -44,19 +43,20 @@ function slideTimer() {
   const rightBtn = document.querySelector('.rightBtn')
 
   leftBtn.addEventListener('click', () => {
+    if (count <= 0) { count = 0; }
     slideList.forEach((v) => { v.classList.remove(`active`); });
-    if (count <= 0) { count = 1; }
-    count--
     const target = document.querySelector(`.${slideArr[count]}`);
     target.classList.add(`active`);
+    count--
     console.log(count);
   })
 
   rightBtn.addEventListener('click', () => {
-    slideList.forEach((v) => { v.classList.remove(`active`); });
     if (count >= slideList.length) { count = 6 }
+    slideList.forEach((v) => { v.classList.remove(`active`); });
     const target = document.querySelector(`.${slideArr[count]}`);
     target.classList.add(`active`);
+    count++
     console.log(count);
   })
 
@@ -67,19 +67,13 @@ function slideTimer() {
     target.classList.add(`active`);
 
     count++;
-  }, 3000);
+    console.log(count);
+  }, 1000);
 }
 
 slideTimer();
 
 //
-
-
-
-for(let entry in slideList){
-  console.log(entry);
-}
-
 
 // view my work BTN
 
