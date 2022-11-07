@@ -11,6 +11,8 @@
   padding: 0;
   font-size: 11px;
   list-style: none;
+
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -20,57 +22,96 @@
 }
 
 .red {
-  border: solid 5px red;
+  border: solid 5px red
 }
 
 a {
   text-decoration: none;
 }
 
+.sectionLine_Con {
+  width: 100%;
+  height: 20vh;
+}
+
+.sectionLine {
+  width: 50vw;
+  height: 0.1vh;
+  background-color: transparent;
+}
+
+
+
 #nav {
   width: 100%;
   height: 10vh;
 
   position: fixed;
+  z-index: 1;
+}
+
+.navBox {
+  max-width: 1920px;
+  width: 100%;
+  height: 8vh;
+
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-
-  transition: 0.5s;
 }
 
 .nav_logo {
-  margin: 1em 2em;
-  padding: 1em 2em;
+  width: 50%;
+  height: 100%;
+  padding-left: 5vw;
+  display: flex;
+  align-items: center;
 }
 
-.nav_logo:hover>.logoIcon {
+.nav_logo:hover>.navlogoIcon {
   cursor: pointer;
-  color: grey;
+  background-image: url(./img/main/navLogo_g.png);
 }
 
-.logo {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: gold;
-    margin-left: 0.3em;
-  }
+.navIcon_a {
+  transition: 3s;
+}
 
-.nav_logo:hover > a > .logo {
-  /* color: rgb(24, 85, 23); */
+.navlogoIcon {
+  width: 7em;
+  height: 3em;
+  margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: center;
+  background-image: url(./img/main/navLogo.png);
+}
+
+.navlogo_text {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(255, 215, 0);
+  margin-left: 0.3em;
+}
+
+.nav_logo:hover .navlogo_text {
   color: aliceblue;
 }
 
 .nav_menu {
-  margin: 2em 4em;
-  right: 0;
+  width: 50%;
+  height: 100%;
+
+  padding-right: 5vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .menuList {
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   color: gold;
@@ -79,7 +120,7 @@ a {
 }
 
 .menuList:hover {
-  color:aliceblue;
+  color: aliceblue;
   cursor: pointer;
 }
 
@@ -87,7 +128,7 @@ a {
 
 #main {
   max-width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: url(./img/main/main_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,14 +139,13 @@ a {
 
 .main_box {
   width: 30em;
-  height: 20em;
+  height: 30em;
 
   position: relative;
 }
 
 .main_logo {
   width: 100%;
-  height: 60%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25em;
@@ -113,11 +153,20 @@ a {
 }
 
 .main_nextBtn {
-  width: 60%;
-  height: 40%;
+  width: 50%;
+  height: 30%;
   margin: auto;
+  margin-top: 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  flex-direction: column;
+  background-image: url(./img/main/arrowBtn_y.png);
+}
+
+.main_nextBtn:hover {
+  cursor: pointer;
+  background-image: url(./img/main/arrowBtn.png);
 }
 
 .nextBtnText {
@@ -147,20 +196,53 @@ a {
 
 #introduce {
   width: 100%;
-  height: 100vh;
-  padding-top: 10vh;
+  height: 130vh;
+  position: relative;
 }
 
-.introduce_slideBox {
-  max-width: 100%;
-  height: 60%;
-  margin: 0 30vh;
+.introduce_slideCon {
+  max-width: 1920px;
+  height: 80vh;
+
+  margin: auto;
   position: relative;
+}
+
+.slideBox {
+  width: 100%;
+  height: 100%;
+}
+
+.slideBtnBox {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftBtn,
+.rightBtn {
+  width: 10vh;
+  height: 20vh;
+  background-color: transparent;
+}
+
+.leftBtnIcon,
+.rightBtnIcon {
+  font-size: 7em;
+  color: gold;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+  cursor: pointer;
+  color: aliceblue;
 }
 
 .slideList {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: block;
   visibility: hidden;
   object-fit: cover;
@@ -171,54 +253,29 @@ a {
   visibility: visible;
 }
 
-.introduce_work {
+.introduce_workCon {
   width: 100%;
-  height: 40%;
+  height: 50vh;
+  position: relative;
 }
 
 .workBox {
-  width: 100%;
+  width: 70vw;
   height: 100%;
-  padding: 5em 30vh;
+  padding: 10em 5em;
 }
 
 .workTitle {
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 200;
 }
 
 .workText {
   font-size: 1.5em;
 
-  padding-top: 3em;
-}
-
-/*  */
-
-#gallery {
-  width: 100%;
-  height: 100vh;
-  background-color:aliceblue;
-}
-
-.gallery_titleBox {
-  width: 100%;
-  height: 30vh;
-
-  padding-top: 10vh;
-  flex-direction: column;
-}
-
-.galleryTitle {
-  font-size: 2em;
-}
-
-.galleryText {
-  font-size: 1.5em;
-  margin-top: 1em;
-}
-
-.gallery_contents {
-  width: 100%;
+  line-height: 200%;
+  text-align: center;
+  padding-top: 4em;
 }
 
 /*  */
@@ -244,20 +301,31 @@ a {
 
 .contactSns {
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 
 .contactList {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0.5em;
+  color: gold;
+}
+
+.contactList:hover {
+  cursor: pointer;
+  color: grey;
 }
 
 .contactCopyright {
   width: 100%;
-  height: 50%;
+  height: 30%;
   background-color: darkslategray;
   color: aliceblue;
 }
+
+.fa-envelope {
+  font-size: 4.5em;
+}
+
 
 .copyrightText {
   font-size: 1.5em;
@@ -265,10 +333,3 @@ a {
 }
 
 /*  */
-
-.line01 {
-  width: 80%;
-  height: 0.1em;
-  background-color: gray;
-  margin: auto;
-}
