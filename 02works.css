@@ -1,0 +1,385 @@
+/* :root {
+  --title-size: 2em;
+  --p-size: 1.5em;
+  --hover-color: grey;
+} */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 11px;
+    list-style: none;
+
+    scroll-behavior: smooth;
+}
+
+h3,
+h4,
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    border: solid 5px red
+}
+
+a {
+    text-decoration: none;
+}
+
+.sectionLine_Con {
+    width: 100%;
+}
+
+.sectionLine {
+    width: 60vw;
+    height: 0.1vh;
+    background-color: cornflowerblue;
+}
+
+
+
+#nav {
+    width: 100%;
+    height: 10vh;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.navBox {
+    max-width: 1920px;
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    width: 50%;
+    height: 100%;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo:hover>.navlogoIcon {
+    cursor: pointer;
+    background-image: url(./img/main/navLogo_g.png);
+}
+
+.navIcon_a {
+    transition: 3s;
+}
+
+.navlogoIcon {
+    width: 7em;
+    height: 3em;
+    margin-bottom: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position: center;
+    background-image: url(./img/main/navLogo.png);
+}
+
+.navlogo_text {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: rgb(255, 215, 0);
+    margin-left: 0.3em;
+}
+
+.nav_logo:hover .navlogo_text {
+    color: aliceblue;
+}
+
+.nav_menu {
+    width: 50%;
+    height: 100%;
+
+    padding-right: 5vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuList {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    color: gold;
+
+    padding: 1em;
+}
+
+.menuList:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/*  */
+
+#main {
+    width: 100%;
+    height: 100vh;
+}
+
+.main_titleBox {
+    width: 100%;
+    height: 40vh;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainText {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.main_imgBox {
+    width: 100%;
+    height: 60vh;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.viewBtn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.viewBtn:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+
+/*  */
+
+#description {
+    width: 100%;
+}
+
+/* .description_titleBox {
+    width: 100%;
+    height: 40vh;
+    padding-top: 10vh;
+} */
+
+/* .descriptionTitle {
+    font-size: 3em;
+} */
+
+.discription_ContentsBox {
+    max-width: 1920px;
+    width: 100%;
+
+    margin: auto;
+}
+
+.contents {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contentsTitle_con {
+    width: 100%;
+    height: 30vh;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+
+.contentsTitle {
+    font-size: 3.5em;
+}
+
+.contentsTitle_text {
+    font-size: 2em;
+    padding-top: 1em;
+    color: gray;
+}
+
+
+.contentsImg_con {
+    max-width: 1920px;
+    width: 100%;
+    height: 50vh;
+}
+
+.contentsImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentsText_box {
+    width: 60%;
+    height: 20vh;
+    margin: auto;
+}
+
+
+.contents1Text {
+    width: 100%;
+    height: 85%;
+    font-size: 1.5em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*  */
+
+#clients {
+    max-width: 1920px;
+
+    margin: auto;
+    top: 10vh
+}
+
+.clients_titleBox {
+    width: 100%;
+    height: 30vh;
+    padding-top: 10vh;
+}
+
+.clientsTitle {
+    font-size: 3em;
+}
+
+.clients_List {
+    width: 100%;
+}
+
+.clientsBox1 {
+    width: 30%;
+    height: 80%;
+    padding: 3em;
+}
+
+.clients_TitleBox1 {
+    width: 100%;
+    height: 10vh;
+}
+
+.clientImg1 {
+    width: 100%;
+    height: 30vh;
+}
+
+.clientsBox2 {
+    width: 30%;
+    height: 80%;
+    padding: 3em;
+}
+
+.clients_TitleBox2 {
+    width: 100%;
+    height: 10vh;
+}
+
+.clientImg2 {
+    width: 100%;
+    height: 30vh;
+}
+
+.clientsBox3 {
+    width: 30%;
+    height: 80%;
+    padding: 3em;
+}
+
+.clients_TitleBox3 {
+    width: 100%;
+    height: 10vh;
+}
+
+.clientImg3 {
+    width: 100%;
+    height: 30vh;
+}
+
+/*  */
+
+#contact {
+    width: 100%;
+ 
+    flex-direction: column;
+  }
+  
+  .contactBox {
+    width: 100%;
+    height: 10vh;
+  }
+  
+  .contactSns {
+    width: 100%;
+    height: 5vh;
+    background-color: aliceblue;
+  
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+  }
+  
+  .contactList {
+    font-size: 3em;
+    margin: 0.5em;
+    color: gold;
+  }
+  
+  .contactList:hover {
+    cursor: pointer;
+    color: grey;
+  }
+  
+  .contactCopyright {
+    width: 100%;
+    height: 5vh;
+    background-color: darkslategray;
+    color: aliceblue;
+  }
+  
+  .fa-envelope {
+    font-size: 3.2em;
+  }
+  
+  
+  .copyrightText {
+    font-size: 1.2em;
+    font-style: normal;
+  }
+  
+  /*  */

@@ -43,7 +43,7 @@ function slideTimer() {
   const rightBtn = document.querySelector('.rightBtn')
 
   leftBtn.addEventListener('click', () => {
-    if (count <= 0) { count = 0; }
+    if (count <= 0) { count = 6; }
     slideList.forEach((v) => { v.classList.remove(`active`); });
     const target = document.querySelector(`.${slideArr[count]}`);
     target.classList.add(`active`);
@@ -52,7 +52,7 @@ function slideTimer() {
   })
 
   rightBtn.addEventListener('click', () => {
-    if (count >= slideList.length) { count = 6 }
+    if (count >= slideList.length) { count = 0 }
     slideList.forEach((v) => { v.classList.remove(`active`); });
     const target = document.querySelector(`.${slideArr[count]}`);
     target.classList.add(`active`);
@@ -68,7 +68,7 @@ function slideTimer() {
 
     count++;
     console.log(count);
-  }, 1000);
+  }, 5000);
 }
 
 slideTimer();

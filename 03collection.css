@@ -1,0 +1,411 @@
+/* :root {
+  --title-size: 2em;
+  --p-size: 1.5em;
+  --hover-color: grey;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 11px;
+    list-style: none;
+
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    border: solid 5px red
+}
+
+a {
+    text-decoration: none;
+}
+
+.sectionLine_Con {
+    width: 100%;
+    height: 20vh;
+}
+
+.sectionLine {
+    width: 50vw;
+    height: 0.1vh;
+    background-color: transparent;
+}
+
+
+
+#nav {
+    width: 100%;
+    height: 10vh;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.navBox {
+    max-width: 1920px;
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    width: 50%;
+    height: 100%;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo:hover>.navlogoIcon {
+    cursor: pointer;
+    background-image: url(./img/main/navLogo_g.png);
+}
+
+.navIcon_a {
+    transition: 3s;
+}
+
+.navlogoIcon {
+    width: 7em;
+    height: 3em;
+    margin-bottom: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position: center;
+    background-image: url(./img/main/navLogo.png);
+}
+
+.navlogo_text {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: rgb(255, 215, 0);
+    margin-left: 0.3em;
+}
+
+.nav_logo:hover .navlogo_text {
+    color: aliceblue;
+}
+
+.nav_menu {
+    width: 50%;
+    height: 100%;
+
+    padding-right: 5vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menuList {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    color: gold;
+
+    padding: 1em;
+}
+
+.menuList:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/*  */
+
+/*  */
+
+#main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main_titleBox {
+    width: 100%;
+    height: 35vh;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+
+.mainTitle {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainText {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.mainImg_con {
+    width: 100%;
+    height: 60vh;
+}
+
+.mainImg_box {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgList_box {
+    width: 30vw;
+    height: 50%;
+    background-color: black;
+    position: relative;
+    border: 1em;
+}
+
+.imgCover {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.imgList_text {
+    font-size: 3em;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.imgCover:hover {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img1 {
+    background-image: url(./img/collection/whole\ glass.jpg);
+}
+
+.img2 {
+    background-image: url(./img/collection/big\ signboard.jpg);
+}
+
+.img3 {
+    background-image: url(./img/collection/store\ signboard.webp);
+}
+
+.img4 {
+    background-image: url(./img/collection/style\ mirror.jpg);
+}
+
+.img5 {
+    background-image: url(./img/collection/style\ frame.jpg);
+}
+
+.img6 {
+    background-image: url(./img/collection/custom_made.webp);
+}
+
+
+.viewBtn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.viewBtn:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+/*  */
+
+#gallery {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gallery_titleBox {
+    width: 100%;
+    height: 35vh;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+
+.galleryTitle {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.galleryText {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+
+
+
+
+
+
+/*  */
+
+#otherWork {
+    max-width: 1920px;
+
+    margin: auto;
+}
+
+.otherWork_titleBox {
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.otherWork_box {
+    max-width: 1920px;
+    width: 100%;
+
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.otherWork_titleBox {
+    width: 100%;
+    height: 30vh;
+}
+
+.otherWorkTitle {
+    font-size: 2em;
+}
+
+.otherWork01,
+.otherWork02,
+.otherWork03 {
+    width: 50em;
+    height: 50em;
+    padding: 5em;
+
+}
+
+.otherWork01_imgBox,
+.otherWork02_imgBox,
+.otherWork03_imgBox {
+    width: 100%;
+    height: 60%;
+    background-color: cornflowerblue;
+}
+
+.otherWork01Img,
+.otherWork02Img,
+.otherWork03Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.otherWork01_textBox,
+.otherWork02_textBox,
+.otherWork03_textBox {
+    width: 100%;
+    height: 40%;
+}
+
+.otherWork01_text_block,
+.otherWork02_text_block,
+.otherWork03_text_block {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.otherWork01Title,
+.otherWork02Title,
+.otherWork03Title {
+    font-size: 2em;
+}
+
+.otherWork01Category,
+.otherWork02Category,
+.otherWork03Category {
+    font-size: 2em;
+}
+
+.otherWork01Text,
+.otherWork02Text,
+.otherWork03Text {
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+/*  */
+
+#contact {
+    width: 100%;
+
+    flex-direction: column;
+}
+
+.contactBox {
+    width: 100%;
+    height: 10vh;
+}
+
+.contactSns {
+    width: 100%;
+    height: 5vh;
+    background-color: aliceblue;
+
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+.contactList {
+    font-size: 3em;
+    margin: 0.5em;
+    color: gold;
+}
+
+.contactList:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.contactCopyright {
+    width: 100%;
+    height: 5vh;
+    background-color: darkslategray;
+    color: aliceblue;
+}
+
+.fa-envelope {
+    font-size: 3.2em;
+}
+
+
+.copyrightText {
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+/*  */

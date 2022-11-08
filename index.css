@@ -113,7 +113,7 @@ a {
 .menuList {
   font-size: 2em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
   color: gold;
 
   padding: 1em;
@@ -268,6 +268,9 @@ a {
 .workTitle {
   font-size: 3em;
   font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 4em;
 }
 
 .workText {
@@ -276,6 +279,7 @@ a {
   line-height: 200%;
   text-align: center;
   padding-top: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*  */
@@ -289,23 +293,27 @@ a {
 
 .contactImg {
   width: 100%;
-  height: 80%;
+  height: 90%;
   object-fit: cover;
 }
 
 .contactBox {
   width: 100%;
-  height: 20%;
-  display: block;
+  height: 10vh;
 }
 
 .contactSns {
   width: 100%;
-  height: 70%;
+  height: 5vh;
+  background-color: aliceblue;
+
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
 }
 
 .contactList {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0.5em;
   color: gold;
 }
@@ -317,18 +325,18 @@ a {
 
 .contactCopyright {
   width: 100%;
-  height: 30%;
+  height: 5vh;
   background-color: darkslategray;
   color: aliceblue;
 }
 
 .fa-envelope {
-  font-size: 4.5em;
+  font-size: 3.2em;
 }
 
 
 .copyrightText {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-style: normal;
 }
 
