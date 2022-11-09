@@ -9,6 +9,7 @@
     <title>Collection</title>
     <link rel="stylesheet" href="./03collection.css">
     <script type="module" defer src="./03collection.js"></script>
+    <script src="./insta/instafeed.min.js"></script>
     <script src="https://kit.fontawesome.com/30cb991463.js" crossorigin="anonymous"></script>
 </head>
 
@@ -67,38 +68,28 @@
         </ul>
     </section>
 
-    <section id="gallery">
+    <section id="collection">
         <header class="gallery_titleBox center">
             <h2 class="galleryTitle"> instagram gallery </h2>
             <p class="galleryText"> #glassgilding #글래스길딩 #전자까 </p>
         </header>
-        <div class="instaTest">
 
-            <script>
-                window.fbAsyncInit = function() {
-                  FB.init({
-                    appId      : '498506578874824',
-                    xfbml      : true,
-                    version    : 'v15.0'
-                  });
-                  FB.AppEvents.logPageView();
-                };
-              
-                (function(d, s, id){
-                   var js, fjs = d.getElementsByTagName(s)[0];
-                   if (d.getElementById(id)) {return;}
-                   js = d.createElement(s); js.id = id;
-                   js.src = "https://connect.facebook.net/en_US/sdk.js";
-                   fjs.parentNode.insertBefore(js, fjs);
-                 }(document, 'script', 'facebook-jssdk'));
-              </script>
-              
+        <div class="galleryCon">
+            <div class="galleryBox">
+                <ul id="gallery"></ul>
+            </div>
         </div>
+
+        <script>
+            var feed = new Instafeed({
+                target: 'gallery',
+                template: '<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}"/></a></li>',
+                accessToken: 'IGQVJVNTl1MkVvZAXpsTl9tbDZAENko2dVE1dFh0cXhTXzFRc05tQ3lPYVBGWHM1N0o3TU8tUGp1TUtGbzc0YVhWZA25EYU5ZAaW1ybVVQMTNXTVJYcjd5YU9kZAl95c0VBbW5hSUhkaUZAoenZAHcTZAxSjY5ZAgZDZD',
+            });
+            feed.run();
+        </script>
+
     </section>
-
-
-
-
 
     <section id="contact" class="center">
         <address class="contactBox">
