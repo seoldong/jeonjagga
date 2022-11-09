@@ -9,7 +9,6 @@
     <title>Collection</title>
     <link rel="stylesheet" href="./03collection.css">
     <script type="module" defer src="./03collection.js"></script>
-    <script src="./insta/instafeed.min.js"></script>
     <script src="https://kit.fontawesome.com/30cb991463.js" crossorigin="anonymous"></script>
 </head>
 
@@ -79,15 +78,6 @@
                 <ul id="gallery"></ul>
             </div>
         </div>
-
-        <script>
-            var feed = new Instafeed({
-                target: 'gallery',
-                template: '<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}"/></a></li>',
-                accessToken: 'IGQVJVNTl1MkVvZAXpsTl9tbDZAENko2dVE1dFh0cXhTXzFRc05tQ3lPYVBGWHM1N0o3TU8tUGp1TUtGbzc0YVhWZA25EYU5ZAaW1ybVVQMTNXTVJYcjd5YU9kZAl95c0VBbW5hSUhkaUZAoenZAHcTZAxSjY5ZAgZDZD',
-            });
-            feed.run();
-        </script>
 
     </section>
 
